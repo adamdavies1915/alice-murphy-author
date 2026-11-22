@@ -1,43 +1,35 @@
 GATE: PASS
 
-Final gate: zero open failures, five nonblocking warnings, no waivers.
+Zero open failures, four nonblocking gate warnings, no waivers.
 
-# Alice Murphy author page — taste audit
+# Alice Murphy — visual refresh
 
-## Changes
+Requested direction: a little more exciting. The page now uses blush, gold, cranberry and forest green drawn from the supplied cover and author photographs. Italic display typography, an arched hero photograph, ruled section headings and a wider leading journal photo give it more personality. The newsletter closes on deep green.
 
-The initial gate found 39 failures. Repairs align the header, headings, section containers and split columns; use the unchanged kit's hero entrance and interaction styles; fix focus and mobile menu behavior; remove tablet dead space; and correct image resolution and small-screen overflow.
+Kind: service / historical romance author portfolio. Main action: Read the books. This updates the existing client-derived palette and Source Serif 4 / Libre Franklin pairing rather than replacing the established layout. The original hero entrance, photo hover and word-highlight moment remain; no new animation library, shader or scene. The supplied `9781454959465_4e4fd2.webp` remains the main book image, displayed whole.
 
-The main book image is the user-supplied `images/9781454959465_4e4fd2.webp`. The complete cover is shown without cropping. The newsletter close adds Alice's research photograph. The journal uses two columns plus a wide third image on portrait tablets and one column on phones.
-
-## Design and content
-
-Kind: service / historical romance author portfolio. Main action: Read the books. This is a repair of the existing design: retain its green, red and paper palette, Source Serif 4 / Libre Franklin pairing, photographic split hero and word-highlight moment. Flat alternating grounds, no shader, scene or generated imagery. The palette echoes the author's photographs and cover.
-
-Voice: direct third-person descriptions based on publisher information and the author's existing captions. No invented prices, reviews, dates, contact details or other facts. No coined brand name, stand-in form, stock photograph or outstanding client asset. Newsletter links to the author's existing signup. Hosting remains GitHub Pages at https://adamdavies.dev/alice-murphy-author/.
+Voice: direct descriptions grounded in the publisher and author's captions. No copy claims were added. No invented facts, coined brands, stand-in forms, stock photographs or missing client assets. The real newsletter signup and GitHub Pages canonical URL remain unchanged.
 
 ## Verification
 
-Final gate round 3 passed after the cover replacement, running desktop and phone consistency/layout checks and the 320px basic walk.
+- Layout check: no findings at 1440×900, 1024×768, 820×1180, 768×1024, 390×844 and 320×640, including headline stress. Desktop and phone screenshots inspected.
+- Full consistency audit at five widths passed responsive layout, keyboard focus, hover behavior, reduced motion, hidden content and asset checks. Its only failure was the muted book theme line at 4.45:1 contrast, found at desktop and phone widths; its colour was darkened before the final gate.
+- Copy lint: zero failures and warnings, 242 words. Git whitespace check passed.
 
-- Full consistency audit at 1440, 1024, 820, 768 and 390 pixels included keyboard focus, contrast, reduced motion, hover behavior, no-script content, loading and responsive layout. It found tablet layout and image issues subsequently repaired.
-- The subsequent all-width quick check cleared desktop, landscape tablet and phone failures. A final targeted quick check after tablet repairs and the cover change reported zero failures at 820 and 768, with eight warnings.
-- Layout checks and screenshots at 1440×900, 1024×768, 820×1180, 768×1024 and 390×844: no findings. Additional 320×640 check after headline adjustment: no findings, including headline stress.
-- Copy lint: zero failures and zero warnings, 242 words.
-- Performance: zero failures and one warning. Total transfer about 982 KiB, largest image 165 KiB, no broken requests, and layout shift 0.001 desktop / 0.000 phone. The phone warning is the full-resolution supplied cover (1045px for a 342px frame); retained for sharp artwork at a modest file size.
-- JavaScript syntax, local asset references and Git whitespace checks pass.
-- The final quick checks do not repeat the full audit's hover and reduced-motion walks. Browser performance measurements are local laboratory results, not field data.
+- Final gate passed after the contrast correction, including desktop/phone consistency checks and the small-phone basic walk.
+- Performance: zero failures, one warning; about 925 KiB transfer, no broken requests, layout shift 0.002 desktop / 0.000 phone. The warning is the full-resolution supplied cover on phones (165 KiB), retained for sharp artwork.
 
 ## Retained warnings
 
-- The author's word-highlight is the existing intentional kit moment; the full audit's reduced-motion check passed.
-- The closing action is newsletter signup rather than repeating “Read the books”; it serves the closing section's distinct purpose.
-- Some band padding is asymmetric because of screen-height layouts and header clearance. Visual checks show no collisions or clipped content.
-- The newsletter navigation points to the actual newsletter content inside the footer; its destination works.
-- The earlier full audit warned about the saturated red author photograph and briefly unloaded lazy photographs under a simulated 1.6 Mbit connection. The photographs retain their real colours and use lazy loading.
+- Four section background colours instead of the skill's preferred three: deliberately retained to give the requested refresh a more varied rhythm.
+- The existing word-highlight moment changes text colour on scroll; reduced-motion fallback passed.
+- The closing action is newsletter signup, distinct from the hero's reading action.
+- The newsletter anchor targets the actual newsletter content in the footer.
+- Alice's sparkling red photograph is more saturated than some other photos; original colours are retained.
+- On the audit's simulated 1.6 Mbit connection, two lazy photographs were still loading one second after navigation. No broken images were found.
 
-No waivers were used. No kit or checker code was modified.
+No waivers. No kit or checker files modified. Local browser timings are laboratory results, not field data.
 
-## Image sources
+## Images
 
-The supplied book-cover file replaces the candle photograph in the main book slot. Other images are from Alice's downloaded Instagram posts: `DcyacD7tzHa` (hero), `DcBrB32IBoA` (author), `DcJSgYvRnou` (bookshop), `DTsrEBpgKLR` (festival), `DP1dM-EAIRD` (shelves), and `DT5uCJKlMMU` (research). Original downloads remain outside the repository. No stock or generated images are presented as Alice's work.
+The user supplied the cover file. Photographs are from Alice's Instagram posts: `DcyacD7tzHa` (hero), `DcBrB32IBoA` (author), `DcJSgYvRnou` (bookshop), `DTsrEBpgKLR` (festival), `DP1dM-EAIRD` (shelves), and `DT5uCJKlMMU` (research). No new images were downloaded or generated for this refresh.

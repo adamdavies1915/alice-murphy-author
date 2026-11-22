@@ -1,6 +1,6 @@
 :root {
-  --p-bg:#faf7f0; --p-surface:#efe9de; --p-ink:#183d32; --p-muted:#59665d;
-  --p-accent:#a82d35; --p-accent-ink:#faf7f0; --p-action:#183d32; --p-action-ink:#faf7f0;
+  --p-bg:#fff8ed; --p-surface:#f3dba9; --p-ink:#183d32; --p-muted:#46574a;
+  --p-accent:#a82d35; --p-accent-ink:#faf7f0; --p-action:#9e293c; --p-action-ink:#fff8ed;
   --p-inv-bg:#183d32; --p-inv-surface:#27493d; --p-inv-ink:#faf7f0; --p-inv-muted:#adb7ae;
   --p-inv-accent:#faf7f0; --p-inv-accent-ink:#183d32; --p-inv-action:#faf7f0; --p-inv-action-ink:#183d32;
   --font-display:'Source Serif 4',Georgia,serif;
@@ -33,7 +33,7 @@ main>.hero { height:100svh; padding:120px 0 64px; }
 .photo-link { display:block; border-radius:var(--r-lg); overflow:hidden; }
 .photo-link:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
 .hero-photo { height:100%; min-height:0; }
-.hero-photo img { object-position:center 42%; }
+.hero-photo img { object-fit:contain; object-position:center; }
 .section-heading { margin-bottom:48px; }
 .section-heading h2 { font-size:var(--t-h2); }
 .books { background:var(--surface); }
@@ -92,7 +92,6 @@ footer.closing>.wrap { display:flex; flex-direction:column; gap:48px; }
   .hero .lede { margin-top:24px; font-size:18px; max-width:56ch; }
   .hero-copy>.btn { margin-top:24px; }
   .hero-photo { width:100%; height:100%; }
-  .hero-photo img { object-position:center 46%; }
   .book-grid,.about-grid { grid-template-columns:1fr; gap:48px; }
   .book-copy,.about-copy,.closing-copy { padding-right:0; }
   .book-photo,.about-photo { height:560px; }
@@ -193,3 +192,19 @@ main>.hero>.wrap { height:100%; min-height:0; }
   #journal>.wrap { height:100%; min-height:0; flex:0 1 auto; }
 }
 @media(max-width:359px) { .hero h1 { font-size:28px; } }
+
+/* A theatrical, book-led palette: curtain red, warm gold and forest green. */
+.hero { background:#f6dfd9; }
+.hero h1 em { color:#9e293c; font-weight:400; }
+.hero-photo { border-radius:0; }
+.section-heading { border-top:1px solid currentColor; padding-top:16px; }
+.section-heading h2 { font-style:italic; }
+.journal { background:#f6dfd9; }
+.book-photo { border-radius:0; }
+.book-copy>h3 { color:#87283a; }
+footer.closing { --p-inv-bg:#183d32; }
+.closing-copy h2 { font-style:italic; }
+.newsletter-name { color:#f3dba9; }
+@media(min-width:1024px) {
+ .photo-grid { grid-template-columns:1.25fr 1fr 1fr; }
+}
